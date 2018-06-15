@@ -11,7 +11,12 @@ const bodyParser = require('body-parser');
 const express = require('express');
 let app = express();
 const AuthenticatorRouter = require('.');
-const authenticator = new AuthenticatorRouter({});
+const authenticator = new AuthenticatorRouter({
+	base_path: '/',
+	expiration: Math.floor(Date.now() / 1000) + (60 * 60), // after 1 hour expiration of token
+	authenticate_path: '/authenticate',
+	sharedSecret: 'koelnerDom'
+});
 
 app.use(bodyParser.json());
 
