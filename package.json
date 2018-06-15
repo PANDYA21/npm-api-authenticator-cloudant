@@ -1,0 +1,34 @@
+{
+	"name": "npm-api-authenticator-cloudant",
+	"description": "",
+	"keywords": [],
+	"version": "0.0.1",
+	"private": true,
+	"dependencies": {
+		"body-parser": "^1.18.3",
+		"express": "^4.16.3",
+		"helmet": "^3.12.1",
+		"jsonwebtoken": "^8.0.1",
+		"morgan": "^1.9.0",
+		"usermanagement-cloudant": "git+https://github.com/RAW21/npm-usermanagement-cloudant.git",
+		"usermanagement-cloudant-middleware": "git+https://github.com/RAW21/npm-usermanagement-cloudant-middleware.git"
+	},
+	"config": {
+		"dev_port": 8081
+	},
+	"scripts": {
+		"test": "SET is_dev=TRUE&& nodemon test.js"
+	},
+	"author": "bhaumik.pandya@bluetrade.de",
+	"license": "UNLICENSED",
+	"devDependencies": {
+		"nodemon": "1.12.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://git.timetoact-group.com/BPA/detectTranslateAnalyze.git"
+	},
+	"engines": {
+		"node": "8.4.0"
+	}
+}

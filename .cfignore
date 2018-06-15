@@ -1,0 +1,6 @@
+*_log.json
+*.log
+node_modules
+*.sublime-workspace
+nodemon.json
+package-lock.json
